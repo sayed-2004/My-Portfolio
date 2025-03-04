@@ -4,17 +4,113 @@
     align-items: center;      /* Center vertically */
     height: 100vh;           /* Full screen height */
     gap: 30px;               /* Space between image and text */
+    padding: 20px;
 }
 
 .home-container img {
-    width: 200px;            /* Adjust size as needed */
-    border-radius: 60px;
+    border-radius: 20px;
     width: 300px;
-    height: 400px;     /* Optional: adds rounded corners */
+    height: 400px;   
+    transition: all 0.3s ease-in-out; /* Smooth resizing */
 }
 
 .text-content {
     font-size: 18px;
-    max-width: 400px;        /* Set a max width for better readability */
+    max-width: 500px;        /* Set a max width for better readability */
     text-align: left;        /* Align text to the left */
+    margin-right: 100px;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    transition: all 0.3s ease-in-out; /* Smooth resizing */
+}
+
+.text-content h3 {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-content p {
+    color: #bdbbb9;
+}
+
+.text-content button {
+    background: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 100px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    
+    .text-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .text-content h1 {
+        font-size: 45px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .home-container img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .text-content button {
+        margin-right: 0;
+    }
+}
+
+/* For smaller screens (phones) */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    
+    .text-content {
+        max-width: 90%;
+    }
+    
+    .text-content h1 {
+        font-size: 35px;
+    }
+
+    .text-content h3 {
+        font-size: 18px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .home-container img {
+        width: 200px;
+        height: 280px;
+    }
+
+    .text-content button {
+        padding: 12px 25px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
 }

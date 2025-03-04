@@ -1,20 +1,24 @@
 import React from 'react'
 import myPic from "../assets/myPic.jpeg"; 
 import './Home.css'
-import Navbar from "./Navbar"
 
 const Home = () => {
   return (
     <>
-        <Navbar />
         <div className="home-container">
-            <img src={myPic} alt="My Picture"/>
             <div className="text-content">
-                <h1>Hi, I'm Sayed Sadat! 👋</h1>
-                <br></br>
-                <p>I'm a passionate Computer Science undergraduate in my first year, exploring the world of software development, problem-solving, and technology.</p>
+                <h1>Sayed Iqbal Sadat</h1>
+                <br />
+                <h3>CS First-Year Undergraduate Student</h3>
+                <br />
+                <p>I'm a first-year Computer Science student with a passion 
+                  for coding, problem-solving, and all things tech. I love building 
+                  cool projects, exploring new technologies, and constantly challenging 
+                  myself to learn and grow. Excited to see where this journey takes me!
+                </p>
+                <button>Connect With Me</button>
             </div>
-      
+            <img src={myPic} alt="My Picture"/>
         </div>
     </>
     
