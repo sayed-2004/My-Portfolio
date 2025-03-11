@@ -5,7 +5,7 @@ import './Home.css'
 const Home = () => {
   return (
     <>
-        <div className="home-container">
+        <div className="home-container w-full h-screen">
             <div className="text-content">
                 <h1>Sayed Iqbal Sadat</h1>
                 <br />
